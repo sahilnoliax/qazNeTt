@@ -45,8 +45,6 @@ bot = Client("bot",
 auth_users = [
     int(chat) for chat in os.environ.get("AUTH_USERS").split(",") if chat != '']
 sudo_users = auth_users
-sudo_groups = [
-    int(chat) for chat in os.environ.get("GROUPS").split(",") if chat != '']
 
 keyboard = InlineKeyboardMarkup(
     [
